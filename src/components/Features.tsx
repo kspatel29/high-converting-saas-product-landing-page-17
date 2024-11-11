@@ -1,21 +1,25 @@
-import { Check } from "lucide-react";
+import { Check, CreditCard, BarChart, Globe, Clock } from "lucide-react";
 
 const features = [
   {
     title: "Simple Checkout",
     description: "Streamlined checkout process optimized for conversion and user experience.",
+    icon: CreditCard,
   },
   {
     title: "Recurring Billing",
     description: "Automated billing system for subscriptions and recurring payments.",
+    icon: Clock,
   },
   {
     title: "Global Payments",
     description: "Accept payments from customers anywhere in the world.",
+    icon: Globe,
   },
   {
     title: "Detailed Analytics",
     description: "Get insights into your business with comprehensive reporting.",
+    icon: BarChart,
   },
 ];
 
@@ -31,10 +35,10 @@ const Features = () => {
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="glass-card p-6 rounded-xl">
+            <div key={index} className="glass-card p-8 rounded-xl">
               <div className="flex items-center gap-3 mb-4">
-                <div className="bg-accent/10 p-2 rounded-lg">
-                  <Check className="w-5 h-5 text-accent" />
+                <div className="bg-accent/10 p-3 rounded-lg">
+                  <feature.icon className="w-6 h-6 text-accent" />
                 </div>
                 <h3 className="font-semibold text-xl">{feature.title}</h3>
               </div>

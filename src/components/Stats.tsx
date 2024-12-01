@@ -1,19 +1,19 @@
 const stats = [
   {
+    value: "10M+",
+    label: "Minutes Dubbed",
+  },
+  {
+    value: "50+",
+    label: "Languages",
+  },
+  {
+    value: "100K+",
+    label: "Videos Created",
+  },
+  {
     value: "99.9%",
-    label: "Uptime",
-  },
-  {
-    value: "150+",
-    label: "Countries",
-  },
-  {
-    value: "$2B+",
-    label: "Processed",
-  },
-  {
-    value: "24/7",
-    label: "Support",
+    label: "Accuracy",
   },
 ];
 

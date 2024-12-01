@@ -1,25 +1,25 @@
-import { Check, CreditCard, BarChart, Globe, Clock } from "lucide-react";
+import { Video, Captions, Youtube, Mic } from "lucide-react";
 
 const features = [
   {
-    title: "Simple Checkout",
-    description: "Streamlined checkout process optimized for conversion and user experience.",
-    icon: CreditCard,
+    title: "Professional Dubbing",
+    description: "Dub your videos in multiple languages with AI-powered voice synthesis and professional voice actors.",
+    icon: Mic,
   },
   {
-    title: "Recurring Billing",
-    description: "Automated billing system for subscriptions and recurring payments.",
-    icon: Clock,
+    title: "Auto Captions",
+    description: "Generate accurate captions in multiple languages automatically, perfect for global reach.",
+    icon: Captions,
   },
   {
-    title: "Global Payments",
-    description: "Accept payments from customers anywhere in the world.",
-    icon: Globe,
+    title: "Video Clips",
+    description: "Create engaging clips from your videos optimized for different social platforms.",
+    icon: Video,
   },
   {
-    title: "Detailed Analytics",
-    description: "Get insights into your business with comprehensive reporting.",
-    icon: BarChart,
+    title: "YouTube Integration",
+    description: "Seamlessly upload your dubbed videos directly to your YouTube channel.",
+    icon: Youtube,
   },
 ];
 
@@ -28,10 +28,10 @@ const Features = () => {
     <section id="features" className="py-16 container-padding">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          Everything You Need to Run & Grow Your Business
+          Everything You Need for Global Content
         </h2>
         <p className="text-neutral-600 text-center mb-12 max-w-2xl mx-auto">
-          All the tools and features you need to accept payments, manage subscriptions, and scale your business globally.
+          Professional tools to help you reach international audiences and grow your YouTube channel.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           {features.map((feature, index) => (

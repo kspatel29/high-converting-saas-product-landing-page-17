@@ -33,6 +33,76 @@ export type Database = {
         }
         Relationships: []
       }
+      user_credits: {
+        Row: {
+          credits: number
+          last_updated: string
+          user_id: string
+        }
+        Insert: {
+          credits?: number
+          last_updated?: string
+          user_id: string
+        }
+        Update: {
+          credits?: number
+          last_updated?: string
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_credits_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: true
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      video_history: {
+        Row: {
+          created_at: string
+          id: string
+          output_url: string | null
+          process_type: string
+          source_language: string
+          status: string
+          target_languages: string[]
+          user_id: string
+          video_name: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          output_url?: string | null
+          process_type: string
+          source_language: string
+          status?: string
+          target_languages: string[]
+          user_id: string
+          video_name: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          output_url?: string | null
+          process_type?: string
+          source_language?: string
+          status?: string
+          target_languages?: string[]
+          user_id?: string
+          video_name?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "video_history_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
